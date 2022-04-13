@@ -1,0 +1,49 @@
+body {
+  /* css basic reset */
+  font-family: "Courier New", Courier, monospace;
+  background-color: #fff2f4;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.mainContent {
+  margin: 0 auto;
+  max-width: 900px;
+  line-height: 2;
+  word-spacing: 4px;
+}
+
+section {
+  margin: 50px;
+}
+
+/* parallax */
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(
+      hsla(350, 100%, 88%, 0.8),
+      hsla(349, 52%, 79%, 0.8)
+    ),
+    url("img/background.jpg");
+
+  height: 60%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
